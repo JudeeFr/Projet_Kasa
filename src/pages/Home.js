@@ -1,11 +1,17 @@
 import React from 'react';
 import Header from '../components/Header';
+import Banner from '../components/Banner';
+import List from '../components/List';
+import Footer from '../components/Footer';
+import banner from '../assets/img/banner.png';
 
 export default function Home() {
 	return (
 		<div>
 			<Header />
-			<h1>Bienvenue!</h1>
+			<Banner picture={banner} />
+			<List />
+			<Footer />
 		</div>
 	);
 }

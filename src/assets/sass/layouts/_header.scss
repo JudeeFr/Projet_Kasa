@@ -1,0 +1,26 @@
+@use "../utils/" as *;
+
+.header {
+    padding: 45px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: 68px;
+    width: 210px;
+    margin-bottom: 2px;
+    img {
+       display: block;
+       margin: auto;
+       padding-top: 10px;
+    }
+}
+
+.navbar {
+    padding-top: 25px;
+    color: $primary-color;
+    a {
+        padding-left: 57px;
+        font-size: 24px;
+    }
+}

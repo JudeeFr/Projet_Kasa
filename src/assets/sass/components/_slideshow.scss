@@ -1,0 +1,28 @@
+@use "../utils/" as *;
+
+.slideshow {
+    position: relative;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;    
+    .slideshow-img {
+        border-radius: 0 0 15px 15px;
+        height: 415px;
+        width: 100%;
+        object-fit: cover;    
+        z-index: -1;
+    }
+    .arrow-left {
+        position: absolute;
+        height: 100px;
+        z-index: 1; 
+        left: 20px;
+    }
+    .arrow-right {
+        position: absolute;
+        height: 100px;
+        z-index: 1;
+        right: 20px;
+    }
+}
+

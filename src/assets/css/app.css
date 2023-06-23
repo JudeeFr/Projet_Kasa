@@ -1,3 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
 
+body {
+  width: 100%;
+  max-width: 1240px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.banner {
+  height: 228px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  position: relative;
+  object-fit: cover;
+  height: 228px;
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  filter: brightness(80%);
+}
+.banner p {
+  position: absolute;
+  font-size: 48px;
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.cards {
+  height: 340px;
+  width: 340px;
+  display: flex;
+  align-items: end;
+  background-color: linear-gradient(#FF6060, black);
+}
+.cards img {
+  position: relative;
+  object-fit: cover;
+  height: 340px;
+  width: 340px;
+  border-radius: 15px;
+  display: block;
+  filter: brightness(80%);
+}
+.cards span {
+  position: absolute;
+  color: white;
+  width: 180px;
+  padding: 15px;
+}
+
+.slideshow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slideshow .slideshow-img {
+  border-radius: 0 0 15px 15px;
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.slideshow .arrow-left {
+  position: absolute;
+  height: 100px;
+  z-index: 1;
+  left: 20px;
+}
+.slideshow .arrow-right {
+  position: absolute;
+  height: 100px;
+  z-index: 1;
+  right: 20px;
+}
+
+.info {
+  display: flex;
+}
+.info .column1 {
+  display: flex;
+  flex-direction: column;
+}
+.info .column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #FF6060;
+  padding: 20px 0;
+}
+.title h1 {
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+.host {
+  display: flex;
+}
+.host img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.host p {
+  color: #FF6060;
+}
+
+.rate {
+  color: #FF6060;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  height: 210px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 70px 0 15px 0;
+}
+.footer img {
+  height: 40px;
+  width: 122px;
+}
+.footer p {
+  padding-top: 40px;
+  color: white;
+  font-size: 24px;
+}
+
+.header {
+  padding: 45px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 68px;
+  width: 210px;
+  margin-bottom: 2px;
+}
+.logo img {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.navbar {
+  padding-top: 25px;
+  color: #FF6060;
+}
+.navbar a {
+  padding-left: 57px;
+  font-size: 24px;
+}
 
 /*# sourceMappingURL=app.css.map */

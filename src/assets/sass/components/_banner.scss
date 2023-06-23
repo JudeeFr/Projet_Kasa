@@ -1,0 +1,23 @@
+@use "../utils/" as *;
+
+.banner {
+    height: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        position: relative;
+        object-fit: cover;
+        height: 228px;
+        width: 100%;
+        border-radius: 15px;
+        display: block;
+        filter: brightness(80%);
+    }
+    p {
+        position: absolute;
+        font-size: 48px;
+        color: white;
+        
+    }
+}

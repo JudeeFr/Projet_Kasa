@@ -1,11 +1,12 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0",
@@ -36,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Property rental web application",
+  "main": "index.js",
+  "repository": "https://github.com/JudeeFr/Projet_Kasa",
+  "author": "jenniferbesson13@hotmail.com",
+  "license": "MIT"
 }

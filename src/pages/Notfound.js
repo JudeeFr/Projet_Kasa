@@ -5,7 +5,8 @@ export default function Notfound() {
 	return (
 		<div>
 			<Header />
-			<h1>A propos</h1>
+			<h1>404</h1>
+			<h2>Oups! La page que vous demandez n'existe pas.</h2>
 		</div>
 	);
 }

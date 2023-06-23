@@ -1,0 +1,25 @@
+@use "../utils/" as *;
+
+.cards {
+    height: 340px;
+    width: 340px;
+    display: flex;
+ 
+    align-items: end;
+    background-color: linear-gradient($primary-color, black);
+    img {
+        position: relative;
+        object-fit: cover;
+        height: 340px;
+        width: 340px;
+        border-radius: 15px;
+        display: block;
+        filter: brightness(80%);
+    }
+    span {
+        position: absolute;
+        color: white;
+        width: 180px;
+        padding: 15px;
+    }
+}

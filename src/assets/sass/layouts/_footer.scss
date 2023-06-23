@@ -1,0 +1,22 @@
+@use "../utils/" as *;
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    height: 210px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 70px 0 15px 0;
+    img {
+        height: 40px;
+        width: 122px;
+        
+    }
+    p {
+        padding-top: 40px;
+        color: white;
+        font-size: 24px;;
+    }
+}
