@@ -111,6 +111,8 @@ h1 {
 
 .info {
   display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
 }
 .info .column1 {
   display: flex;
@@ -132,18 +134,56 @@ h1 {
 
 .host {
   display: flex;
+  width: 167px;
+  align-items: center;
+  gap: 10px;
 }
 .host img {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
 }
 .host p {
   color: #FF6060;
 }
 
+.tag {
+  display: flex;
+  gap: 10px;
+}
+.tag .tags {
+  background-color: #FF6060;
+  padding: 3px 35px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+.tag .tags p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .rate {
+  font-size: 24px;
+}
+.rate .rate-full {
   color: #FF6060;
+  padding: 5px;
+}
+.rate .rate-empty {
+  color: #E3E3E3;
+  padding: 5px;
+}
+
+.collapse {
+  padding: 25px 0;
+  border-radius: 5px;
+}
+.collapse_title {
+  background-color: #FF6060;
+}
+.collapse_text {
+  font-size: 14px;
 }
 
 .footer {
@@ -189,6 +229,19 @@ h1 {
 .navbar a {
   padding-left: 57px;
   font-size: 24px;
+}
+
+.notfound {
+  text-align: center;
+  color: #FF6060;
+  padding: 70px 0;
+}
+.notfound h2 {
+  padding: 40px 0 100px 0;
+  font-size: 36px;
+}
+.notfound a {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=app.css.map */

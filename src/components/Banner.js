@@ -1,8 +1,8 @@
-export default function Banner({ picture }) {
+export default function Banner({ picture, text }) {
 	return (
 		<div className="banner">
 			<img src={picture} alt="banner img" />
-			<p>Chez vous, partout et ailleurs</p>
+			<p>{text}</p>
 		</div>
 	);
 }

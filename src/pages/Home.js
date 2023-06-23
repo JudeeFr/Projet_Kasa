@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<div>
 			<Header />
-			<Banner picture={banner} />
+			<Banner picture={banner} text="Chez vous, partout et ailleurs" />
 			<List />
 			<Footer />
 		</div>

@@ -1,0 +1,17 @@
+@use "../utils/" as *;
+
+.tag {
+    display : flex;
+    gap: 10px;
+    .tags {
+        background-color: $primary-color;
+        padding: 3px 35px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        p {
+        font-size: 14px;
+        font-weight: 300;
+        }
+    }
+}

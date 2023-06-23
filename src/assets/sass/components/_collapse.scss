@@ -1,0 +1,12 @@
+@use "../utils/" as *;
+
+.collapse {
+    padding: 25px 0;
+    border-radius: 5px;
+    &_title {
+        background-color: $primary-color;
+    }
+    &_text {
+        font-size: 14px;
+    }
+}

@@ -1,5 +1,14 @@
 @use "../utils/" as *;
 
-.rate {
-    color: $primary-color;
+.rate {   
+    font-size: 24px;
+   
+    .rate-full {
+        color: $primary-color;
+        padding: 5px;
+    }
+    .rate-empty {
+        color: #E3E3E3;
+        padding: 5px;
+    }
 }

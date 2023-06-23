@@ -1,0 +1,14 @@
+@use "../utils/" as *;
+
+.notfound {   
+    text-align: center;
+    color: $primary-color;
+    padding: 70px 0;
+    h2 {
+        padding: 40px 0 100px 0;
+        font-size: 36px;       
+    }
+    a {
+        font-size: 18px;        
+    }
+}
