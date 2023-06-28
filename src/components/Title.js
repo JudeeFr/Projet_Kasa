@@ -1,4 +1,4 @@
-export default function Title({ title, location, host, rate, tag }) {
+export default function Title({ title, location }) {
 	return (
 		<div className="title">
 			<h1>{title}</h1>

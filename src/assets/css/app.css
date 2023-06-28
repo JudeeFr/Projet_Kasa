@@ -160,6 +160,7 @@ h1 {
   text-align: center;
   color: white;
   border-radius: 10px;
+  list-style-type: none;
 }
 .tag .tags p {
   font-size: 14px;

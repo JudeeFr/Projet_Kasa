@@ -7,7 +7,7 @@ import logements from '../logements.json';
 import Title from '../components/Title';
 import Host from '../components/Host';
 import Rate from '../components/Rate';
-import Collapse from '../components/Collapse';
+// import Collapse from '../components/Collapse';
 
 export default function Housing() {
 	let { id } = useParams();
@@ -20,7 +20,13 @@ export default function Housing() {
 			<div className="info">
 				<div className="column1">
 					<Title title={housing.title} location={housing.location} />
-
+					<ul className="tag">
+						{housing.tags.map((tag, index) => (
+							<li className="tags" key={index}>
+								{tag}
+							</li>
+						))}
+					</ul>
 					{/* <Collapse title="" text="" /> */}
 				</div>
 				<div className="column2">
