@@ -6,8 +6,8 @@ import { useParams } from 'react-router-dom';
 import logements from '../logements.json';
 import Title from '../components/Title';
 import Host from '../components/Host';
-import Rate from '../components/Rate';
-// import Collapse from '../components/Collapse';
+// import Rate from '../components/Rate';
+import Collapse from '../components/Collapse';
 
 export default function Housing() {
 	let { id } = useParams();
@@ -17,7 +17,7 @@ export default function Housing() {
 			<Header />
 			<Slideshow slides={housing.pictures} />
 
-			<div className="info">
+			<div className="info-line1">
 				<div className="column1">
 					<Title title={housing.title} location={housing.location} />
 					<ul className="tag">
@@ -27,13 +27,22 @@ export default function Housing() {
 							</li>
 						))}
 					</ul>
-					{/* <Collapse title="" text="" /> */}
 				</div>
 				<div className="column2">
 					<Host name={housing.host.name} picture={housing.host.picture} />
-					<Rate tag={housing.rate} />
-					{/* <Collapse title="" text="" /> */}
+					{/* <Rate tag={housing.rate} /> */}
 				</div>
+			</div>
+			<div className="info-line2">
+				<Collapse title="Description" text={housing.description} />
+				<Collapse
+					title="Equipements"
+					text={housing.equipments.map((equipment, index) => (
+						<li className="equipment" key={index}>
+							{equipment}
+						</li>
+					))}
+				/>
 			</div>
 			<Footer />
 		</div>

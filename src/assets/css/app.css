@@ -112,18 +112,25 @@ h1 {
   cursor: pointer;
 }
 
-.info {
+.info-line1 {
   display: flex;
   padding: 25px 0;
   justify-content: space-between;
 }
-.info .column1 {
+.info-line1 .column1 {
   display: flex;
   flex-direction: column;
 }
-.info .column2 {
+.info-line1 .column2 {
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
+}
+
+.info-line2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
 }
 
 .title {
@@ -169,6 +176,7 @@ h1 {
 
 .rate {
   font-size: 24px;
+  padding-top: 25px;
 }
 .rate .rate-full {
   color: #FF6060;
@@ -180,14 +188,31 @@ h1 {
 }
 
 .collapse {
-  padding: 25px 0;
-  border-radius: 5px;
+  padding: 25px 0 50px 0;
+  width: 50%;
 }
 .collapse_title {
   background-color: #FF6060;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 .collapse_text {
   font-size: 14px;
+  color: #FF6060;
+  background-color: #f6f6f6;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+.collapse_arrow {
+  cursor: pointer;
+}
+
+.equipment {
+  list-style-type: none;
 }
 
 .footer {

@@ -1,13 +1,19 @@
-.info {
+.info-line1 {
     display: flex;
     padding: 25px 0;
     justify-content: space-between;
     .column1 {
-        display: flex;
-        flex-direction: column;
+        display: flex;       
+        flex-direction: column;        
     }
     .column2 {
-        display: flex;
-        flex-direction: column;
+        display: flex;    
+        flex-direction: column; 
+        padding-top: 25px;      
     }
+}
+.info-line2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
 }

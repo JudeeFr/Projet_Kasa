@@ -1,12 +1,30 @@
 @use "../utils/" as *;
 
 .collapse {
-    padding: 25px 0;
-    border-radius: 5px;
+    padding: 25px 0 50px 0;
+    
+    width: 50%;
     &_title {
         background-color: $primary-color;
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
     }
     &_text {
         font-size: 14px;
+        color: $primary-color;
+        background-color: #f6f6f6;
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+
     }
+    &_arrow {
+        cursor: pointer;
+    }
+}
+.equipment {
+    list-style-type: none;
 }
