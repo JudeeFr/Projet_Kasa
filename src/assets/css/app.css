@@ -128,9 +128,10 @@ h1 {
 }
 
 .info-line2 {
-  display: flex;
-  justify-content: space-around;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding-bottom: 50px;
 }
 
 .title {
@@ -188,8 +189,7 @@ h1 {
 }
 
 .collapse {
-  padding: 25px 0 50px 0;
-  width: 50%;
+  padding: 15px 0;
 }
 .collapse_title {
   background-color: #FF6060;
@@ -199,20 +199,31 @@ h1 {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .collapse_text {
   font-size: 14px;
   color: #FF6060;
   background-color: #f6f6f6;
   border-radius: 0 0 10px 10px;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
+  position: relative;
+  top: -10px;
+  z-index: -1;
+  transition: margin-bottom 2s ease-in-out;
 }
 .collapse_arrow {
   cursor: pointer;
 }
 
-.equipment {
+.collapse-housing_equipment {
   list-style-type: none;
+}
+
+.collapse-about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 0;
 }
 
 .footer {

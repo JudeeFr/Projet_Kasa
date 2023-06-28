@@ -34,16 +34,22 @@ export default function Housing() {
 				</div>
 			</div>
 			<div className="info-line2">
-				<Collapse title="Description" text={housing.description} />
 				<Collapse
+					className="collapse-housing"
+					title="Description"
+					text={housing.description}
+				/>
+				<Collapse
+					className="collapse-housing"
 					title="Equipements"
 					text={housing.equipments.map((equipment, index) => (
-						<li className="equipment" key={index}>
+						<li className="collapse-housing_equipment" key={index}>
 							{equipment}
 						</li>
 					))}
 				/>
 			</div>
+
 			<Footer />
 		</div>
 	);

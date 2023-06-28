@@ -3,18 +3,20 @@ import arrowUp from '../assets/img/arrowUp.png';
 import arrowDown from '../assets/img/arrowDown.png';
 
 export default function Collapse({ title, text }) {
-	const [isOpen, setIsOpen] = useState(false);
+	const [selected, setselected] = useState(false);
+
 	return (
-		<div className="collapse" onClick={() => setIsOpen(!isOpen)}>
+		<div className="collapse">
 			<div className="collapse_title">
 				<div>{title}</div>
 				<img
-					src={isOpen ? arrowDown : arrowUp}
+					src={selected ? arrowDown : arrowUp}
 					alt="arrow"
 					className="collapse_arrow"
+					onClick={() => setselected(!selected)}
 				/>
 			</div>
-			{isOpen && <div className="collapse_text">{text}</div>}
+			{selected && <div className="collapse_text">{text}</div>}
 		</div>
 	);
 }
