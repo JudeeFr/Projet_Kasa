@@ -17,12 +17,14 @@
         height: 100px;
         z-index: 1; 
         left: 20px;
+        cursor: pointer;
     }
     .arrow-right {
         position: absolute;
         height: 100px;
         z-index: 1;
         right: 20px;
+        cursor: pointer;
     }
 }
 

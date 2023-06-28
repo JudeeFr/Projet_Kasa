@@ -64,6 +64,7 @@ h1 {
   height: 340px;
   width: 340px;
   display: flex;
+  cursor: pointer;
   align-items: end;
   background-color: linear-gradient(#FF6060, black);
 }
@@ -101,12 +102,14 @@ h1 {
   height: 100px;
   z-index: 1;
   left: 20px;
+  cursor: pointer;
 }
 .slideshow .arrow-right {
   position: absolute;
   height: 100px;
   z-index: 1;
   right: 20px;
+  cursor: pointer;
 }
 
 .info {
