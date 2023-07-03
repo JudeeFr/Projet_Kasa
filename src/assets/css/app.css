@@ -73,6 +73,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .banner img {
   position: relative;
@@ -388,9 +389,6 @@ h1 {
     transform: translateY(-50px);
   }
 }
-.collapse {
-  padding: 15px 0;
-}
 .collapse_title {
   background-color: #FF6060;
   border-radius: 10px;
@@ -402,7 +400,6 @@ h1 {
   align-items: center;
 }
 .collapse_text {
-  opacity: 0;
   font-size: 14px;
   color: #FF6060;
   background-color: #f6f6f6;
@@ -416,11 +413,14 @@ h1 {
   cursor: pointer;
 }
 .collapse_open {
+  display: block;
   opacity: 1;
   animation: FadeIn 500ms;
 }
 .collapse_close {
+  opacity: 0;
   animation: FadeOut 500ms;
+  height: 0;
 }
 
 .rotate {
@@ -440,7 +440,7 @@ h1 {
 .collapse-about {
   width: 80%;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 
 @keyframes FadeIn {

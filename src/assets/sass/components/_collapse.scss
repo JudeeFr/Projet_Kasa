@@ -2,7 +2,7 @@
 
 
 .collapse {
-     padding: 15px 0;      
+         
     &_title {
         background-color: $primary-color;
         border-radius: 10px;
@@ -13,8 +13,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    &_text {      
-        opacity: 0;   
+    &_text {         
         font-size: 14px;
         color: $primary-color;
         background-color: #f6f6f6;
@@ -28,11 +27,14 @@
         cursor: pointer;          
     }
     &_open {         
+        display: block;
         opacity: 1;
         animation : FadeIn 500ms;    
     }
-    &_close {
+    &_close {   
+        opacity: 0; 
         animation: FadeOut 500ms;
+        height: 0;
     }
 }
 
@@ -53,5 +55,5 @@
 .collapse-about {
     width: 80%;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 15px 0;
 }
