@@ -2,8 +2,7 @@
 
 
 .collapse {
-     padding: 15px 0; 
-     
+     padding: 15px 0;      
     &_title {
         background-color: $primary-color;
         border-radius: 10px;
@@ -14,7 +13,8 @@
         justify-content: space-between;
         align-items: center;
     }
-    &_text {
+    &_text {      
+        opacity: 0;   
         font-size: 14px;
         color: $primary-color;
         background-color: #f6f6f6;
@@ -23,13 +23,28 @@
         position: relative;
         top: -10px;
         z-index: -1;
-        transition: margin-bottom 2s ease-in-out;
     }
     &_arrow {
-        cursor: pointer;  
-        
+        cursor: pointer;          
+    }
+    &_open {         
+        opacity: 1;
+        animation : FadeIn 500ms;    
+    }
+    &_close {
+        animation: FadeOut 500ms;
     }
 }
+
+.rotate {
+    transform: rotate(-180deg);
+    transition: 500ms;
+}
+.rotate2 {
+    transform: rotate(deg);
+    transition: 500ms;
+}
+
 .collapse-housing {    
     &_equipment {
         list-style-type: none;

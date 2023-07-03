@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
 import arrowUp from '../assets/img/arrowUp.png';
-import arrowDown from '../assets/img/arrowDown.png';
 
 export default function Collapse({ title, text }) {
 	const [selected, setselected] = useState(false);
-
 	return (
 		<div className="collapse">
 			<div className="collapse_title">
 				<div>{title}</div>
 				<img
-					src={selected ? arrowDown : arrowUp}
+					src={arrowUp}
 					alt="arrow"
-					className="collapse_arrow"
+					className={`collapse_arrow ${selected ? 'rotate' : 'rotate2'}`}
 					onClick={() => setselected(!selected)}
 				/>
 			</div>
-			{selected && <div className="collapse_text">{text}</div>}
+
+			<div
+				className={`collapse_text ${
+					selected ? 'collapse_open' : 'collapse_close'
+				}`}
+			>
+				{text}
+			</div>
 		</div>
 	);
 }
