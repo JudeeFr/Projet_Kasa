@@ -9,6 +9,10 @@
     background-color: black;
     text-align: center;
     padding: 70px 0 15px 0;
+    @include mobile {
+        padding: 50px 0 20px 0;
+        height: 209px;
+        }
     img {
         height: 40px;
         width: 122px;
@@ -17,6 +21,12 @@
     p {
         padding-top: 40px;
         color: white;
-        font-size: 24px;;
+        font-size: 24px;
+        @include mobile {
+            font-size: 12px;
+            padding-top: 10px;
+            width: 40% ;
+            margin: 0 auto;
+        }
     }
 }

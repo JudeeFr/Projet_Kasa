@@ -3,6 +3,11 @@
 .tag {
     display : flex;
     gap: 10px;
+    @include mobile {
+        padding: 10px;
+        flex-wrap: wrap;
+        
+    }
     .tags {
         background-color: $primary-color;
         padding: 3px 35px;
@@ -10,9 +15,11 @@
         color: white;
         border-radius: 10px;
         list-style-type: none;
-        p {
         font-size: 14px;
         font-weight: 300;
+        @include mobile {
+            font-size: 10px;
+            padding: 3px 20px;
         }
     }
 }

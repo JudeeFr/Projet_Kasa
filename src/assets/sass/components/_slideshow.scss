@@ -6,11 +6,15 @@
 	align-items: center;
 	justify-content: space-between;    
     .slideshow-img {
-        border-radius: 0 0 15px 15px;
+        border-radius: 15px;
         height: 415px;
         width: 100%;
         object-fit: cover;    
         z-index: -1;
+        @include mobile {
+            height: 255px;
+            padding: 10px;
+        }
     }
     .arrow-left {
         position: absolute;
@@ -18,6 +22,9 @@
         z-index: 1; 
         left: 20px;
         cursor: pointer;
+        @include mobile {
+            height: 25px;
+        }
     }
     .arrow-right {
         position: absolute;
@@ -25,6 +32,9 @@
         z-index: 1;
         right: 20px;
         cursor: pointer;
+        @include mobile {
+            height: 25px;
+        }
     }
 }
 

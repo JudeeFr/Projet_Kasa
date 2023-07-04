@@ -75,6 +75,13 @@ h1 {
   align-items: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 640px) {
+  .banner {
+    padding: 0 10px;
+    height: 111px;
+    margin: 10px auto;
+  }
+}
 .banner img {
   position: relative;
   object-fit: cover;
@@ -84,10 +91,22 @@ h1 {
   display: block;
   filter: brightness(80%);
 }
+@media screen and (max-width: 640px) {
+  .banner img {
+    height: 111px;
+  }
+}
 .banner p {
   position: absolute;
   font-size: 48px;
   color: white;
+}
+@media screen and (max-width: 640px) {
+  .banner p {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 
 @keyframes FadeIn {
@@ -120,6 +139,13 @@ h1 {
   padding: 40px;
   margin: 40px 0;
 }
+@media screen and (max-width: 640px) {
+  .list {
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color: transparent;
+  }
+}
 
 @keyframes FadeIn {
   0% {
@@ -149,6 +175,12 @@ h1 {
   align-items: end;
   background-color: linear-gradient(#FF6060, black);
 }
+@media screen and (max-width: 640px) {
+  .cards {
+    height: 255px;
+    width: 335px;
+  }
+}
 .cards img {
   position: relative;
   object-fit: cover;
@@ -157,6 +189,12 @@ h1 {
   border-radius: 15px;
   display: block;
   filter: brightness(80%);
+}
+@media screen and (max-width: 640px) {
+  .cards img {
+    height: 255px;
+    width: 335px;
+  }
 }
 .cards span {
   position: absolute;
@@ -192,11 +230,17 @@ h1 {
   justify-content: space-between;
 }
 .slideshow .slideshow-img {
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
   height: 415px;
   width: 100%;
   object-fit: cover;
   z-index: -1;
+}
+@media screen and (max-width: 640px) {
+  .slideshow .slideshow-img {
+    height: 255px;
+    padding: 10px;
+  }
 }
 .slideshow .arrow-left {
   position: absolute;
@@ -205,6 +249,11 @@ h1 {
   left: 20px;
   cursor: pointer;
 }
+@media screen and (max-width: 640px) {
+  .slideshow .arrow-left {
+    height: 25px;
+  }
+}
 .slideshow .arrow-right {
   position: absolute;
   height: 100px;
@@ -212,11 +261,42 @@ h1 {
   right: 20px;
   cursor: pointer;
 }
+@media screen and (max-width: 640px) {
+  .slideshow .arrow-right {
+    height: 25px;
+  }
+}
 
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
 .info-line1 {
   display: flex;
   padding: 25px 0;
   justify-content: space-between;
+}
+@media screen and (max-width: 640px) {
+  .info-line1 {
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
 }
 .info-line1 .column1 {
   display: flex;
@@ -227,12 +307,26 @@ h1 {
   flex-direction: column;
   padding-top: 25px;
 }
+@media screen and (max-width: 640px) {
+  .info-line1 .column2 {
+    flex-direction: row-reverse;
+    padding-top: 10px;
+  }
+}
 
 .info-line2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 640px) {
+  .info-line2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+  }
 }
 
 @keyframes FadeIn {
@@ -259,9 +353,19 @@ h1 {
   color: #FF6060;
   padding: 20px 0;
 }
+@media screen and (max-width: 640px) {
+  .title {
+    padding: 0 10px;
+  }
+}
 .title h1 {
   padding: 10px 0;
   font-weight: 400;
+}
+@media screen and (max-width: 640px) {
+  .title h1 {
+    font-size: 24px;
+  }
 }
 
 @keyframes FadeIn {
@@ -295,8 +399,20 @@ h1 {
   width: 65px;
   height: 65px;
 }
+@media screen and (max-width: 640px) {
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
+}
 .host p {
   color: #FF6060;
+}
+@media screen and (max-width: 640px) {
+  .host p {
+    font-size: 12px;
+    width: 30%;
+  }
 }
 
 @keyframes FadeIn {
@@ -323,6 +439,12 @@ h1 {
   display: flex;
   gap: 10px;
 }
+@media screen and (max-width: 640px) {
+  .tag {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+}
 .tag .tags {
   background-color: #FF6060;
   padding: 3px 35px;
@@ -330,10 +452,14 @@ h1 {
   color: white;
   border-radius: 10px;
   list-style-type: none;
-}
-.tag .tags p {
   font-size: 14px;
   font-weight: 300;
+}
+@media screen and (max-width: 640px) {
+  .tag .tags {
+    font-size: 10px;
+    padding: 3px 20px;
+  }
 }
 
 @keyframes FadeIn {
@@ -359,14 +485,31 @@ h1 {
 .rate {
   font-size: 24px;
   padding-top: 25px;
+  display: flex;
+}
+@media screen and (max-width: 640px) {
+  .rate {
+    font-size: 16px;
+    padding: 0 10px;
+  }
 }
 .rate .rate-full {
   color: #FF6060;
   padding: 5px;
 }
+@media screen and (max-width: 640px) {
+  .rate .rate-full {
+    padding: 0 3px;
+  }
+}
 .rate .rate-empty {
   color: #E3E3E3;
   padding: 5px;
+}
+@media screen and (max-width: 640px) {
+  .rate .rate-empty {
+    ppadding: 0 3px;
+  }
 }
 
 @keyframes FadeIn {
@@ -398,6 +541,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .collapse_title {
+    font-size: 13px;
+    padding: 5px;
+  }
 }
 .collapse_text {
   font-size: 14px;
@@ -442,6 +591,12 @@ h1 {
   margin: 0 auto;
   padding: 15px 0;
 }
+@media screen and (max-width: 640px) {
+  .collapse-about {
+    width: 100%;
+    padding: 10px;
+  }
+}
 
 @keyframes FadeIn {
   0% {
@@ -472,6 +627,12 @@ h1 {
   text-align: center;
   padding: 70px 0 15px 0;
 }
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 50px 0 20px 0;
+    height: 209px;
+  }
+}
 .footer img {
   height: 40px;
   width: 122px;
@@ -480,6 +641,14 @@ h1 {
   padding-top: 40px;
   color: white;
   font-size: 24px;
+}
+@media screen and (max-width: 640px) {
+  .footer p {
+    font-size: 12px;
+    padding-top: 10px;
+    width: 40%;
+    margin: 0 auto;
+  }
 }
 
 @keyframes FadeIn {
@@ -507,11 +676,22 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 10px;
+  }
+}
 
 .logo {
   height: 68px;
   width: 210px;
   margin-bottom: 2px;
+}
+@media screen and (max-width: 640px) {
+  .logo {
+    width: 145px;
+    height: 45px;
+  }
 }
 .logo img {
   display: block;
@@ -526,6 +706,13 @@ h1 {
 .navbar a {
   padding-left: 57px;
   font-size: 24px;
+}
+@media screen and (max-width: 640px) {
+  .navbar a {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
 }
 
 @keyframes FadeIn {
@@ -557,8 +744,25 @@ h1 {
   padding: 40px 0 100px 0;
   font-size: 36px;
 }
+@media screen and (max-width: 640px) {
+  .notfound h2 {
+    font-size: 18px;
+  }
+}
 .notfound a {
   font-size: 18px;
+  text-decoration: underline;
+}
+@media screen and (max-width: 640px) {
+  .notfound a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .notfound img {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

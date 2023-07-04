@@ -7,6 +7,10 @@
     cursor: pointer;
     align-items: end;
     background-color: linear-gradient($primary-color, black);
+    @include mobile {
+        height: 255px;
+        width: 335px;
+    }
     img {
         position: relative;
         object-fit: cover;
@@ -15,6 +19,10 @@
         border-radius: 15px;
         display: block;
         filter: brightness(80%);
+        @include mobile {
+            height: 255px;
+            width: 335px;
+        }
     }
     span {
         position: absolute;

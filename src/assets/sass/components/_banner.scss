@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    @include mobile {
+       padding: 0 10px;
+       height: 111px;
+       margin: 10px auto;
+    }
     img {
         position: relative;
         object-fit: cover;
@@ -14,11 +19,18 @@
         border-radius: 15px;
         display: block;
         filter: brightness(80%);
+        @include mobile {
+            height: 111px;
+        }
     }
     p {
         position: absolute;
         font-size: 48px;
         color: white;
-        
+        @include mobile {
+            font-size: 24px;
+            text-align: left;
+            padding-left: 20px;
+        }
     }
 }

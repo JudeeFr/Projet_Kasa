@@ -6,12 +6,13 @@ import { useParams } from 'react-router-dom';
 import logements from '../logements.json';
 import Title from '../components/Title';
 import Host from '../components/Host';
-// import Rate from '../components/Rate';
+
 import Collapse from '../components/Collapse';
 
 export default function Housing() {
 	let { id } = useParams();
 	let housing = logements.filter((logement) => logement.id === id)[0];
+	const rating = Number(housing.rating);
 	return (
 		<div>
 			<Header />
@@ -30,7 +31,19 @@ export default function Housing() {
 				</div>
 				<div className="column2">
 					<Host name={housing.host.name} picture={housing.host.picture} />
-					{/* <Rate tag={housing.rate} /> */}
+					<div className="rate">
+						{[...Array(5)].map((star, i) => {
+							const starValue = i + 1;
+							return (
+								<i
+									key={i}
+									className={`fa-solid fa-star ${
+										starValue <= rating ? 'rate-full' : 'rate-empty'
+									}`}
+								></i>
+							);
+						})}
+					</div>
 				</div>
 			</div>
 			<div className="info-line2">

@@ -9,8 +9,16 @@
         border-radius: 50%;
         width: 65px;
         height: 65px;
+        @include mobile {
+            width: 32px;
+            height: 32px;
+        }
     }
     p {
         color: $primary-color;
+        @include mobile {
+            font-size: 12px;
+            width: 30%;
+        }
     }
 }

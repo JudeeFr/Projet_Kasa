@@ -4,23 +4,37 @@
     padding: 45px 0 50px 0;
     display: flex;
     justify-content: space-between;
+    @include mobile {
+        padding: 10px;
+    }
 }
 .logo {
     height: 68px;
     width: 210px;
     margin-bottom: 2px;
+    @include mobile {
+        width: 145px;
+        height: 45px;
+       }
     img {
        display: block;
        margin: auto;
        padding-top: 10px;
+       
     }
 }
 
 .navbar {
     padding-top: 25px;
     color: $primary-color;
+    
     a {
         padding-left: 57px;
         font-size: 24px;
+        @include mobile {
+            font-size: 12px;
+            text-transform: uppercase;
+            padding-left: 10px;
+        }
     }
 }
