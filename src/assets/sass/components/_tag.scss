@@ -3,9 +3,11 @@
 .tag {
     display : flex;
     gap: 10px;
+    align-items: center; 
+    grid-area: tag;
     @include mobile {
         padding: 10px;
-        flex-wrap: wrap;
+        
         
     }
     .tags {

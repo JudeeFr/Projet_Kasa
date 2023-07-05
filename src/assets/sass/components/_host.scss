@@ -5,6 +5,13 @@
     width: 167px;
     align-items: center;
     gap: 10px;
+    text-align: right;
+    justify-self: end;    
+    grid-area: host;
+    @include mobile {
+        justify-content: end;
+        padding-right: 10px;
+    }
     img {
         border-radius: 50%;
         width: 65px;

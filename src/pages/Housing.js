@@ -19,8 +19,15 @@ export default function Housing() {
 			<Slideshow slides={housing.pictures} />
 
 			<div className="info-line1">
-				<div className="column1">
+				<div className="title">
 					<Title title={housing.title} location={housing.location} />
+				</div>
+
+				<div className="host">
+					<Host name={housing.host.name} picture={housing.host.picture} />
+				</div>
+
+				<div>
 					<ul className="tag">
 						{housing.tags.map((tag, index) => (
 							<li className="tags" key={index}>
@@ -29,23 +36,22 @@ export default function Housing() {
 						))}
 					</ul>
 				</div>
-				<div className="column2">
-					<Host name={housing.host.name} picture={housing.host.picture} />
-					<div className="rate">
-						{[...Array(5)].map((star, i) => {
-							const starValue = i + 1;
-							return (
-								<i
-									key={i}
-									className={`fa-solid fa-star ${
-										starValue <= rating ? 'rate-full' : 'rate-empty'
-									}`}
-								></i>
-							);
-						})}
-					</div>
+
+				<div className="rate">
+					{[...Array(5)].map((star, i) => {
+						const starValue = i + 1;
+						return (
+							<i
+								key={i}
+								className={`fa-solid fa-star ${
+									starValue <= rating ? 'rate-full' : 'rate-empty'
+								}`}
+							></i>
+						);
+					})}
 				</div>
 			</div>
+
 			<div className="info-line2">
 				<Collapse
 					className="collapse-housing"

@@ -14,7 +14,7 @@
         align-items: center;
         @include mobile {
            font-size: 13px;
-           padding: 5px;
+           padding: 5px 10px;
          }
     }
     &_text {         
@@ -28,12 +28,16 @@
         z-index: -1;
     }
     &_arrow {
-        cursor: pointer;         
+        cursor: pointer;      
+        @include mobile {
+            height: 20px;
+            width: 20px;
+        }   
     }
     &_open {         
         display: block;
         opacity: 1;
-        animation : FadeIn 500ms;    
+        animation : FadeIn 500ms;         
     }
     &_close {   
         opacity: 0; 

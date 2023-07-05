@@ -288,29 +288,15 @@ h1 {
   }
 }
 .info-line1 {
-  display: flex;
-  padding: 25px 0;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "title host" "tag rate";
 }
 @media screen and (max-width: 640px) {
   .info-line1 {
     padding-top: 10px;
-    flex-wrap: wrap;
-  }
-}
-.info-line1 .column1 {
-  display: flex;
-  flex-direction: column;
-}
-.info-line1 .column2 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 25px;
-}
-@media screen and (max-width: 640px) {
-  .info-line1 .column2 {
-    flex-direction: row-reverse;
-    padding-top: 10px;
+    grid-template-areas: "title title" "tag tag" "rate host";
+    padding-bottom: 30px;
   }
 }
 
@@ -318,7 +304,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  padding-bottom: 50px;
+  padding: 25px 0;
 }
 @media screen and (max-width: 640px) {
   .info-line2 {
@@ -350,20 +336,25 @@ h1 {
   }
 }
 .title {
+  display: flex;
+  flex-direction: column;
+  grid-area: title;
+}
+.title_content {
   color: #FF6060;
   padding: 20px 0;
 }
 @media screen and (max-width: 640px) {
-  .title {
+  .title_content {
     padding: 0 10px;
   }
 }
-.title h1 {
-  padding: 10px 0;
+.title_content h1 {
+  padding: 5px 0;
   font-weight: 400;
 }
 @media screen and (max-width: 640px) {
-  .title h1 {
+  .title_content h1 {
     font-size: 24px;
   }
 }
@@ -393,6 +384,15 @@ h1 {
   width: 167px;
   align-items: center;
   gap: 10px;
+  text-align: right;
+  justify-self: end;
+  grid-area: host;
+}
+@media screen and (max-width: 640px) {
+  .host {
+    justify-content: end;
+    padding-right: 10px;
+  }
 }
 .host img {
   border-radius: 50%;
@@ -438,11 +438,12 @@ h1 {
 .tag {
   display: flex;
   gap: 10px;
+  align-items: center;
+  grid-area: tag;
 }
 @media screen and (max-width: 640px) {
   .tag {
     padding: 10px;
-    flex-wrap: wrap;
   }
 }
 .tag .tags {
@@ -484,18 +485,21 @@ h1 {
 }
 .rate {
   font-size: 24px;
-  padding-top: 25px;
   display: flex;
+  justify-self: end;
+  align-items: center;
+  grid-area: rate;
 }
 @media screen and (max-width: 640px) {
   .rate {
     font-size: 16px;
     padding: 0 10px;
+    justify-self: left;
   }
 }
 .rate .rate-full {
   color: #FF6060;
-  padding: 5px;
+  padding: 0 5px;
 }
 @media screen and (max-width: 640px) {
   .rate .rate-full {
@@ -504,7 +508,7 @@ h1 {
 }
 .rate .rate-empty {
   color: #E3E3E3;
-  padding: 5px;
+  padding: 0 5px;
 }
 @media screen and (max-width: 640px) {
   .rate .rate-empty {
@@ -545,7 +549,7 @@ h1 {
 @media screen and (max-width: 640px) {
   .collapse_title {
     font-size: 13px;
-    padding: 5px;
+    padding: 5px 10px;
   }
 }
 .collapse_text {
@@ -560,6 +564,12 @@ h1 {
 }
 .collapse_arrow {
   cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+  .collapse_arrow {
+    height: 20px;
+    width: 20px;
+  }
 }
 .collapse_open {
   display: block;
