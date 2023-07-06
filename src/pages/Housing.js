@@ -6,13 +6,26 @@ import { useParams } from 'react-router-dom';
 import logements from '../logements.json';
 import Title from '../components/Title';
 import Host from '../components/Host';
-
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Collapse from '../components/Collapse';
 
 export default function Housing() {
 	let { id } = useParams();
 	let housing = logements.filter((logement) => logement.id === id)[0];
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		if (!housing) {
+			navigate('Notfound', { replace: true });
+		}
+	}, [housing, navigate]);
+	if (!housing) {
+		return null;
+	}
+
 	const rating = Number(housing.rating);
+
 	return (
 		<div>
 			<Header />
