@@ -5,6 +5,7 @@ import Notfound from './pages/Notfound';
 import Housing from './pages/Housing';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+// ajout des chemins des pages
 const router = createBrowserRouter([
 	{
 		path: '/',

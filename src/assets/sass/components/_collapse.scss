@@ -2,7 +2,7 @@
 
 
 .collapse {
-   
+   padding: 10px 0;
     &_title {
         background-color: $primary-color;
         border-radius: 10px;
@@ -26,6 +26,7 @@
         position: relative;
         top: -10px;
         z-index: -1;
+        
     }
     &_arrow {
         cursor: pointer;      
@@ -43,6 +44,7 @@
         opacity: 0; 
         animation: FadeOut 500ms;
         height: 0;
+        
     }
 }
 

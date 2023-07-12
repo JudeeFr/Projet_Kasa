@@ -11,10 +11,11 @@ import { useNavigate } from 'react-router-dom';
 import Collapse from '../components/Collapse';
 
 export default function Housing() {
+	// utilisation de la fonction filter pour afficher le logement selon l'id et de useparams pour récupérer l'id au clic de la page accueil
 	let { id } = useParams();
 	let housing = logements.filter((logement) => logement.id === id)[0];
+	// ajout du hook useEffect et usenavigate pour renvoyer sur la page erreur en cas d'id faux
 	const navigate = useNavigate();
-
 	useEffect(() => {
 		if (!housing) {
 			navigate('Notfound', { replace: true });

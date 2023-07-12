@@ -536,6 +536,9 @@ h1 {
     transform: translateY(-50px);
   }
 }
+.collapse {
+  padding: 10px 0;
+}
 .collapse_title {
   background-color: #FF6060;
   border-radius: 10px;
