@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
 	align-items: center;
-	justify-content: space-between;    
+	justify-content: center;    
     .slideshow-img {
         border-radius: 15px;
         height: 415px;
@@ -36,5 +36,14 @@
             height: 25px;
         }
     }
+    .number-slides {
+        font-size: 18px;
+        padding-bottom: 20px;
+        align-self: end;
+        position: absolute;
+        z-index: 1;
+        color: white;
+    }
 }
+
 

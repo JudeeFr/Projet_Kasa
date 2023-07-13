@@ -227,7 +227,7 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .slideshow .slideshow-img {
   border-radius: 15px;
@@ -265,6 +265,14 @@ h1 {
   .slideshow .arrow-right {
     height: 25px;
   }
+}
+.slideshow .number-slides {
+  font-size: 18px;
+  padding-bottom: 20px;
+  align-self: end;
+  position: absolute;
+  z-index: 1;
+  color: white;
 }
 
 @keyframes FadeIn {
