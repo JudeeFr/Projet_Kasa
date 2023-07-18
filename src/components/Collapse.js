@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import arrowUp from '../assets/img/arrowUp.png';
 
 export default function Collapse({ title, text }) {
-	const [selected, setselected] = useState(false);
+	const [selected, setSelected] = useState(false);
 	const [firstClick, setFirstClick] = useState(false);
 
 	useEffect(() => {
@@ -20,7 +20,7 @@ export default function Collapse({ title, text }) {
 					src={arrowUp}
 					alt="arrow"
 					className={`collapse_arrow ${selected ? 'rotate' : 'rotate2'}`}
-					onClick={() => setselected(!selected)}
+					onClick={() => setSelected(!selected)}
 				/>
 			</div>
 

@@ -12,7 +12,7 @@ export default function List() {
 	// ajout de la methode map pour afficher les logements et slice pour en selectionner 6
 	return (
 		<div className="list">
-			{logements.slice(0, 6).map((housing, index) => (
+			{logements.map((housing, index) => (
 				<div key={index} onClick={() => pageProduct(housing.id)}>
 					<Cards key={index} picture={housing.cover} title={housing.title} />
 				</div>

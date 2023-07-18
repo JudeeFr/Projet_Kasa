@@ -18,7 +18,7 @@
         width: 100%;
         border-radius: 15px;
         display: block;
-        filter: brightness(80%);
+        filter: brightness(80%);      
         @include mobile {
             height: 111px;
         }
@@ -33,4 +33,5 @@
             padding-left: 20px;
         }
     }
+    
 }
